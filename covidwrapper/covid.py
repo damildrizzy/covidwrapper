@@ -5,32 +5,32 @@ class Covid():
         self.country = country
         self.status = status
 
-    def cases_by_country():
+    def cases_by_country(self):
         path = f'https://api.covid19api.com/country/{self.country}/status/{self.status}'
         response = requests.get(path)
         return response.json()
 
-    def live_cases_by_country():
+    def live_cases_by_country(self):
         path = f'https://api.covid19api.com/country/{self.country}/status/{self.status}/live'
         response = requests.get(path)
         return response.json()
 
-    def total_cases_by_country():
+    def total_cases_by_country(self):
         path = f'https://api.covid19api.com/total/country/{self.country}/status/{self.status}/live'  
         response = requests.get(path)
         return response.json()
     
-    def cases_since_day1():
+    def cases_since_day1(self):
         path = f'https://api.covid19api.com/dayone/country/{self.country}/status/confirmed'
         response = requests.get(path)
         return response.json()
     
-    def live_cases_since_day1():
+    def live_cases_since_day1(self):
         path = f'https://api.covid19api.com/dayone/country/{self.country}/status/confirmed/live'
         response = requests.get(path)
         return response.json()
 
-    def total_cases_since_day1():
+    def total_cases_since_day1(self):
         path = f'https://api.covid19api.com/total/country/{self.country}/status/confirmed'
         response = requests.get(path)
         return response.json()
