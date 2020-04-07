@@ -49,8 +49,8 @@ class Covid():
 
     @staticmethod
     def all_data():
-        # path = 'https://api.covid19api.com/all'
-        # response = requests.get(path)
-        # return response.json()
-        pass
+        path = 'https://api.covid19api.com/all'
+        response = requests.get(path)
+        return response.json()
+    
 
