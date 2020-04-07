@@ -26,4 +26,12 @@ def test_with_status_recovered():
     assert response[0]['Country'] == 'Barbados'
     assert response[0]['Status'] == 'recovered'
 
-    
+
+def test_cases_since_day1():
+    country_instance = Covid('togo')
+    response = country_instance.total_cases_since_day1()
+
+    assert isinstance(response, list)
+    assert isinstance(response[0], dict)
+    assert response[0]['Country'] == 'Togo'
+    assert response[0]['Status'] == 'confirmed'
