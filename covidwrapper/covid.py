@@ -21,7 +21,7 @@ class Covid():
         return response.json()
     
     def cases_since_day1(self):
-        path = f'https://api.covid19api.com/dayone/country/{self.country}/status/confirmed'
+        path = f'https://api.covid19api.com/dayone/country/{self.country}/status/{self.status}'
         response = requests.get(path)
         return response.json()
     
