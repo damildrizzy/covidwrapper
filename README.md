@@ -1,7 +1,7 @@
 # Covidwrapper
 ## A Python Wrapper for The Coronavirus Covid19 API
 
-Covidwrapper is a python wrapper for **[covid19api.com][covid19api.com]**. It Includes functions that can simplify your code and access vasts amount of realtime covid19 data. For further details on covid19 API, check out their documentation at https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest.
+Covidwrapper is a python wrapper for https://covid19api.com. It Includes functions that can simplify your code and access vasts amount of realtime covid19 data. For further details on covid19 API, check out their documentation at https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest.
 
 ## Installation
 
@@ -14,7 +14,7 @@ pip install covidwrapper
 ```
 * Clone the repo
 ```bash
-git clone https://github.com/damildrizzy/pyvid.git
+git clone https://github.com/damildrizzy/covidwrapper.git
 ```
 ## Usage
 Get a summary of new and total cases updated daily
