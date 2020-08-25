@@ -27,7 +27,7 @@ Get all the available countries and provinces, as well as the country slug for p
 from covidwrapper import Covid
 covid_summary = Covid.countries()
 ```
-Get cases by country
+Get cases by country.
 ```python
 from covidwrapper import Covid
 nigeria = Covid('nigeria')
